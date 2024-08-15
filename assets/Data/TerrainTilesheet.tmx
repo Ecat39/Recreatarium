@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.10" tiledversion="1.11.0" orientation="isometric" renderorder="right-down" width="14" height="14" tilewidth="240" tileheight="80" infinite="0" nextlayerid="3" nextobjectid="1">
+ <tileset firstgid="1" name="terraintilesheet" tilewidth="288" tileheight="288" tilecount="16" columns="4" objectalignment="top">
+  <tileoffset x="-26" y="206"/>
+  <properties>
+   <property name="collides" type="bool" value="true"/>
+  </properties>
+  <image source="../Tilesheets/terraintilesheet.png" width="1152" height="1152"/>
+ </tileset>
+ <tileset firstgid="17" name="resourcetilesheet" tilewidth="240" tileheight="160" tilecount="28" columns="4">
+  <properties>
+   <property name="collides" type="bool" value="true"/>
+  </properties>
+  <image source="../Tilesheets/resourcetilesheet.png" width="960" height="1120"/>
+ </tileset>
+ <layer id="1" name="Terrain" width="14" height="14">
+  <data encoding="csv">
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,1,1,1,1,1,1,1,1,1,1,1,1,
+1,1,5,5,5,1,1,1,1,1,1,1,1,1,
+1,1,5,5,5,1,1,1,1,1,1,1,1,1,
+1,1,5,5,5,5,1,1,1,1,1,1,1,1,
+1,1,1,5,5,5,5,1,1,1,1,1,1,1,
+1,1,1,1,5,5,5,1,1,1,1,1,1,1,
+1,1,1,5,5,5,5,5,1,1,1,1,1,1,
+1,1,5,5,5,5,5,5,1,1,1,1,1,1,
+1,5,5,5,5,5,5,5,1,1,1,1,1,1,
+1,5,5,5,5,5,5,1,1,1,1,1,1,1
+</data>
+ </layer>
+ <layer id="2" name="Resources" width="14" height="14">
+  <data encoding="csv">
+0,0,0,0,0,0,0,0,0,0,0,0,19,0,
+0,19,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,19,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,19,0,0,0,0,0,0,27,27,0,0,
+23,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,19,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,19,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,17,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0,
+0,0,0,0,0,0,0,0,0,0,0,0,0,0
+</data>
+ </layer>
+</map>
