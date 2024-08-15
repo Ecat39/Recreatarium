@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recreatarium</title>
+    <style>
+        html, body, .container {
+            margin: 0px;
+            height: 100vh;
+            width: 100vw;
+            overflow: hidden;
+            background-color: #CFCFCF;
+        }
+        @font-face {
+            font-family: Helvetica;
+            src: url('src/assets/fonts/Helvetica.ttf') format('truetype');
+        }
+      
+        @font-face {
+            font-family: Housearama-Kingpin;
+            src: url('src/assets/fonts/Housearama-Kingpin.ttf') format('truetype');
+        }
+    </style>
+    <script src="https://cdn.jsdelivr.net/npm/webfontloader@1.6.28/webfontloader.min.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/phaser@3.80.1/dist/phaser.min.js"></script>
+</head>
+<body>
+    <div class="container" id="game-container">
+    </div>
+    <script src="./src/main.js" type="module"></script>
+</body>
+</html>
