@@ -84,7 +84,7 @@ export class GameScene extends Phaser.Scene {
 
         this.input.on('pointermove', (pointer) => {
             if (pointer.isDown) {
-                if (this.gameCamera.zoom > 1) {
+                if (this.gameCamera.zoom >= 1) {
                     this.boundX = 800 * this.gameCamera.zoom;
                     this.boundY = 350 * this.gameCamera.zoom;
                 } else {
@@ -101,7 +101,7 @@ export class GameScene extends Phaser.Scene {
             // Get the current world point under pointer.
             const worldpoint = this.gameCamera.getWorldPoint(pointer.x, pointer.y);
             const newzoom = Phaser.Math.RoundTo(this.gameCamera.zoom - this.gameCamera.zoom * 0.001 * deltaY, -3);
-            this.gameCamera.zoom = Phaser.Math.Clamp(newzoom, 0.25, 2);
+            this.gameCamera.zoom = Phaser.Math.Clamp(newzoom, 0.3, 2);
             console.log(this.gameCamera.zoom);
 
             // Update camera matrix, so getWorldPoint returns zoom-adjusted coordinates.
