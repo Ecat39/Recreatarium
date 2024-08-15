@@ -84,7 +84,7 @@ export class GameScene extends Phaser.Scene {
 
         this.input.on('pointermove', (pointer) => {
             if (pointer.isDown) {
-                if (this.gameCamera.zoom > 1) {
+                if (this.gameCamera.zoom => 1) {
                     this.boundX = 800 * this.gameCamera.zoom;
                     this.boundY = 350 * this.gameCamera.zoom;
                 } else {
